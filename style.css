@@ -15,6 +15,7 @@
 
     body {
         color: white;
+        background-color: rgba(26, 11, 46, 1);
     }
 
     /* Shared Styles */
@@ -154,7 +155,58 @@
 
     .hero-content p {
         margin-top: 14px;
-        color: #cccccc;
+
         max-width: 520px;
         line-height: 1.6;
+    }
+
+    /* About Section */
+    .about {
+        width: 100%;
+        height: 646px;
+        padding: 120px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-box {
+        width: 100%;
+        max-width: 1200px;
+        padding: 60px 200px;
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 16px;
+        text-align: center;
+    }
+
+    .about-box h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+
+    .about-text {
+        line-height: 170%;
+        margin-bottom: 18px;
+    }
+
+    .about-text.small {
+        font-size: 14px;
+        opacity: 90%;
+    }
+
+    .about-stats {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+    }
+
+    .about-stats h3 {
+        color: #00ff88;
+        font-size: 32px;
+        margin-bottom: 6px;
+    }
+
+    .about-stats span {
+        font-size: 0.9rem;
     }
