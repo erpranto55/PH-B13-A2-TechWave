@@ -425,8 +425,8 @@
 
     .host-details p {
         font-size: 0.95rem;
-        line-height: 1.6;
-        opacity: 0.85;
+        line-height: 1.6rem;
+        opacity: 60%;
         margin-bottom: 16px;
     }
 
@@ -738,4 +738,35 @@
             margin-top: 8px;
         }
 
+
+        /* Host section */
+        .host {
+            margin-top: 60px;
+            padding: 0 20px;
+        }
+
+        .host h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+        }
+
+        .meet {
+            flex-direction: column;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .host-img {
+            margin: 0 auto 16px;
+            max-width: 120px;
+            max-height: 120px;
+        }
+
+        .host-details {
+            text-align: center;
+        }
+
+        .social {
+            justify-content: center;
+        }
     }
