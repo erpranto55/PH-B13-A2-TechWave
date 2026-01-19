@@ -509,7 +509,6 @@
     /* Media Query for small devices */
     @media screen and (max-width:576px) {
 
-
         /* Navbar */
         .navbar {
             justify-content: space-between;
@@ -592,4 +591,53 @@
             width: 100%;
             max-width: 260px;
         }
+
+        /* About Section */
+
+        .about {
+            padding: 60px 20px;
+            height: auto;
+        }
+
+        .about-box {
+            width: 100%;
+            max-width: 440px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            gap: 40px;
+            padding: 40px 20px;
+            height: auto;
+        }
+
+        .about-box h2 {
+            font-size: 2rem;
+            line-height: 2.6rem;
+            font-weight: 700;
+            width: 400px;
+            max-width: 100%;
+            margin: 0 auto 24px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .about-stats {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 40px;
+            column-gap: 20px;
+            text-align: center;
+        }
+
+
+
+
+
+
     }
