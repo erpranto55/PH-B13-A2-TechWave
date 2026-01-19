@@ -327,9 +327,7 @@
     }
 
     .video {
-        line-height: 0;
-        justify-content: center;
-        align-items: top;
+        position: relative;
         width: 100%;
         aspect-ratio: 380 / 214;
         overflow: hidden;
@@ -337,10 +335,12 @@
     }
 
     .video iframe {
-        display: block;
-        width: 110%;
-        height: 110%;
-        transform: translate(-5%, -5%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 120%;
+        height: 120%;
+        transform: translate(-50%, -50%);
         border: none;
     }
 
@@ -426,7 +426,7 @@
     .host-details p {
         font-size: 0.95rem;
         line-height: 1.6rem;
-        opacity: 60%;
+        opacity: 70%;
         margin-bottom: 16px;
     }
 
@@ -451,9 +451,10 @@
     /* Footer Styles */
 
     footer {
-        width: 100%;
-        background: url("./assets/footer-bg.png") center/cover no-repeat;
+        background: url("./assets/footer-bg.png") no-repeat center top;
+        background-size: 100% 100%;
     }
+
 
     .footer-container {
         max-width: 1200px;
@@ -768,5 +769,34 @@
 
         .social {
             justify-content: center;
+        }
+
+        /* Footer Section */
+        footer {
+            min-height: 248px;
+            background-position: center top;
+        }
+
+        .footer-container {
+            padding: 60px 20px 30px;
+        }
+
+        .footer-logo img {
+            width: 260px;
+        }
+
+        .podcast {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .listen {
+            width: 50%;
+            justify-content: center;
+        }
+
+        .footer-container p {
+            font-size: 1rem;
+            margin-top: 20px;
         }
     }
