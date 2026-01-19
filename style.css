@@ -66,21 +66,10 @@
     }
 
     .logo {
-        color: white;
         width: 219px;
         height: 32px;
-        font-weight: bold;
         justify-content: space-around;
         align-items: center;
-    }
-
-    .logo #wave {
-        background: linear-gradient(45deg,
-                rgba(247, 233, 63, 1),
-                rgba(251, 9, 180, 1),
-                rgba(145, 0, 248, 1));
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
     .nav-links {
