@@ -434,3 +434,50 @@
         opacity: 1;
         transform: scale(1.1);
     }
+
+
+    /* Footer Styles */
+
+    footer {
+        width: 100%;
+        background: url("./assets/footer-bg.png") center/cover no-repeat;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 80px 20px 40px;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        width: 410px;
+        margin-bottom: 24px;
+    }
+
+    .podcast {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        margin-bottom: 24px;
+    }
+
+    .listen {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        opacity: 0.85;
+    }
+
+    .listen img {
+        width: 22px;
+    }
+
+    .listen p {
+        font-size: 0.9rem;
+    }
+
+    .footer-container p {
+        font-size: 0.8rem;
+        opacity: 0.7;
+    }
