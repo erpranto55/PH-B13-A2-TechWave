@@ -243,6 +243,7 @@
         padding: 120px 0;
         display: flex;
         justify-content: center;
+        background-color: rgba(35, 14, 61, 1);
     }
 
     .why-box {
