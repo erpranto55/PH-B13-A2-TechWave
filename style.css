@@ -13,6 +13,11 @@
         box-sizing: border-box;
     }
 
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     body {
         color: white;
         background-color: rgba(26, 11, 46, 1);
@@ -21,6 +26,17 @@
     /* Shared Styles */
     .grad {
         background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
+    }
+
+    img,
+    iframe,
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hide {
+        display: none;
     }
 
     /* Buttons */
@@ -167,7 +183,8 @@
     /* About Section */
     .about {
         width: 100%;
-        height: 646px;
+        min-height: 646px;
+        height: auto;
         padding: 120px 0;
         display: flex;
         justify-content: center;
@@ -336,11 +353,9 @@
 
     .video iframe {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 120%;
-        height: 120%;
-        transform: translate(-50%, -50%);
+        inset: 0;
+        width: 100%;
+        height: 100%;
         border: none;
     }
 
@@ -465,30 +480,35 @@
 
     .footer-logo img {
         width: 410px;
-        margin-bottom: 24px;
+        margin-bottom: 28px;
     }
 
     .podcast {
         display: flex;
         justify-content: center;
-        gap: 32px;
-        margin-bottom: 24px;
+        gap: 16px;
+        margin-bottom: 28px;
     }
 
     .listen {
-        display: flex;
+        display: grid;
+        grid-template-columns: 22px auto;
         align-items: center;
-        gap: 8px;
-        opacity: 0.85;
+        column-gap: 8px;
+        opacity: 0.8;
     }
 
     .listen img {
         width: 22px;
+        height: 22px;
+        object-fit: contain;
     }
 
     .listen p {
         font-size: 0.9rem;
+        white-space: nowrap;
     }
+
 
     .footer-container p {
         font-size: 0.8rem;
@@ -551,6 +571,7 @@
         /* Hero Part */
         .hero {
             height: auto;
+            min-height: 760px;
             padding: 80px 20px 60px;
             background-size: 100% auto;
             background-position: center 70px;
@@ -620,11 +641,10 @@
             font-size: 2rem;
             line-height: 2.6rem;
             font-weight: 700;
-            width: 400px;
+            width: auto;
             max-width: 100%;
             margin: 0 auto 24px;
             text-align: center;
-            white-space: nowrap;
         }
 
         .about-stats {
@@ -644,8 +664,8 @@
         }
 
         .why-box {
-            width: 460px;
-            max-width: 100%;
+            max-width: 460px;
+            width: 100%;
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -721,8 +741,16 @@
             aspect-ratio: 400 / 220;
         }
 
+        .video iframe {
+            max-width: 100%;
+        }
+
         .card-body {
             padding: 16px;
+        }
+
+        .cards .card {
+            max-width: 100%;
         }
 
         .cards .card h3 {
@@ -742,6 +770,8 @@
 
         /* Host section */
         .host {
+            max-width: 460px;
+            margin: auto;
             margin-top: 60px;
             padding: 0 20px;
         }
@@ -783,20 +813,33 @@
 
         .footer-logo img {
             width: 260px;
+            margin-bottom: 24px;
         }
 
         .podcast {
-            flex-wrap: wrap;
-            gap: 20px;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            column-gap: 24px;
+            row-gap: 16px;
+            margin-top: -12px;
         }
 
         .listen {
-            width: 50%;
-            justify-content: center;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        .footer-container p {
-            font-size: 1rem;
-            margin-top: 20px;
+        .listen img {
+            width: 22px;
+            height: 22px;
+            object-fit: contain;
         }
+
+        .listen p {
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
     }
