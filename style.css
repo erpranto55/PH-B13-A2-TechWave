@@ -374,8 +374,8 @@
     }
 
     .cards .card {
-        height: 440px;
-        background: rgba(255, 255, 255, 0.05);
+        height: 390px;
+        /* background: rgba(255, 255, 255, 0.05); */
         border-radius: 16px;
         padding: 0px;
         overflow: hidden;
@@ -385,7 +385,7 @@
 
     .cards .card:hover {
         transform: translateY(-6px);
-        background: rgba(255, 255, 255, 0.08);
+        /* background: rgba(255, 255, 255, 0.08); */
     }
 
     .video {
@@ -402,6 +402,10 @@
         width: 100%;
         height: 100%;
         border: none;
+    }
+
+    .boder{
+        border-radius: 15px 15px 0 0;
     }
 
     .card-body {
