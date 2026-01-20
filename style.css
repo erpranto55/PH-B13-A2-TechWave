@@ -49,7 +49,6 @@
         cursor: pointer;
         display: flex;
         align-items: center;
-        justify-content: center;
         gap: 8px;
         border: none;
         font-weight: 500;
@@ -100,15 +99,7 @@
         width: 100%;
         height: 92px;
         margin: 0 auto;
-        background-color: #1A0B2E;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .logo {
-        width: 219px;
-        height: 32px;
         justify-content: space-around;
         align-items: center;
     }
@@ -118,8 +109,6 @@
         list-style: none;
         display: flex;
         gap: 32px;
-        justify-content: space-around;
-        align-items: center;
     }
 
     .nav-links a {
@@ -176,11 +165,10 @@
         right: 10px;
         background: #00ff88;
         color: #1A0B2E;
-        font-size: 12px;
+        font-size: 18px;
         font-weight: 700;
         padding: 4px 10px;
         border-radius: 20px;
-        box-shadow: 0 0 10px rgba(0, 255, 136, 0.6);
         z-index: 5;
         animation: pulse 1.8s infinite;
     }
@@ -220,9 +208,7 @@
     /* About Section */
     .about {
         width: 100%;
-        min-height: 646px;
-        height: auto;
-        padding: 120px 0;
+        padding: 50px 200px 80px 200px;
         display: flex;
         justify-content: center;
     }
@@ -230,26 +216,29 @@
     .about-box {
         width: 100%;
         max-width: 1200px;
-        padding: 60px 200px;
-        background: rgba(255, 255, 255, 0.02);
         border-radius: 16px;
         text-align: center;
     }
 
     .about-box h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: 700;
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
 
     .about-text {
         line-height: 170%;
         margin-bottom: 18px;
+        opacity: 80%;
+        font-weight: 400;
+        line-height: 1.2rem;
     }
 
-    .about-text.small {
-        font-size: 14px;
-        opacity: 90%;
+
+    .about-hr {
+        border: 1px solid var(--#FFFFFF, rgba(255, 255, 255, 1));
+        opacity: 0.1;
+        margin: 80px 0;
     }
 
     .about-stats {
@@ -261,27 +250,28 @@
 
     .about-stats h3 {
         color: #00ff88;
-        font-size: 32px;
-        margin-bottom: 6px;
+        font-size: 3rem;
+        margin-bottom: 16px;
+        line-height: 3.5rem;
     }
 
     .about-stats span {
-        font-size: 0.9rem;
+        opacity: 0.8;
+        color: var(--#FFFFFF, rgba(255, 255, 255, 1));
+        line-height: 1.2rem;
+        text-align: center;
     }
 
     /* Why Section */
     .why {
         width: 100%;
-        padding: 120px 0;
-        display: flex;
-        justify-content: center;
+        padding: 120px 200px;
         background-color: rgba(35, 14, 61, 1);
     }
 
     .why-box {
         width: 100%;
         max-width: 1600px;
-        padding: 0 200px;
         margin: auto;
         text-align: center;
     }
@@ -300,11 +290,12 @@
     }
 
     .card {
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 16px;
-        padding: 28px;
+        background: rgba(53, 17, 101, 0.4);
+        border-radius: 40px;
+        padding: 40px;
         display: flex;
         flex-direction: column;
+        gap: 16px;
         justify-content: center;
         align-items: flex-start;
         text-align: left;
@@ -318,16 +309,20 @@
 
 
     .card h3 {
-        margin-bottom: 8px;
+        margin-bottom: 16px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.8rem;
     }
 
     .card p {
-        line-height: 1.6;
-        opacity: 0.9;
+        line-height: 1.5rem;
+        opacity: 60%;
     }
 
     .why-icon {
-        width: 36px;
+        height: 60px;
+        width: 60px;
         margin-bottom: 14px;
     }
 
@@ -362,9 +357,10 @@
     }
 
     .episodes h2 {
-        font-size: 2.4rem;
+        font-size: 3rem;
         font-weight: 700;
-        margin-bottom: 48px;
+        margin-bottom: 40px;
+        line-height: 3.5rem;
     }
 
     .cards {
@@ -375,8 +371,7 @@
 
     .cards .card {
         height: 390px;
-        /* background: rgba(255, 255, 255, 0.05); */
-        border-radius: 16px;
+        border-radius: 24px;
         padding: 0px;
         overflow: hidden;
         display: flex;
@@ -385,7 +380,6 @@
 
     .cards .card:hover {
         transform: translateY(-6px);
-        /* background: rgba(255, 255, 255, 0.08); */
     }
 
     .video {
@@ -393,7 +387,7 @@
         width: 100%;
         aspect-ratio: 380 / 214;
         overflow: hidden;
-        border-radius: 16px 16px 0 0;
+        border-radius: 24px 24px 0 0;
     }
 
     .video iframe {
@@ -404,7 +398,7 @@
         border: none;
     }
 
-    .boder{
+    .boder {
         border-radius: 15px 15px 0 0;
     }
 
@@ -414,14 +408,13 @@
 
     .cards .card h3 {
         font-size: 1.5rem;
-        margin-bottom: 8px;
+        margin-bottom: 12px;
         font-weight: 700;
         line-height: 1.8rem;
         text-align: left;
     }
 
     .cards .card p {
-        font-size: 0.9rem;
         line-height: 1.5rem;
         opacity: 60%;
         margin-bottom: 12px;
@@ -435,12 +428,14 @@
     }
 
     .time img {
-        width: 16px;
+        width: 20px;
+        height: 20px;
     }
 
     .time span {
-        font-size: 0.85rem;
-        opacity: 0.8;
+        color: #00FF88;
+        line-height: 1.5rem;
+        font-weight: 600;
     }
 
     /* Host Section Styles */
@@ -455,13 +450,15 @@
         font-size: 3rem;
         font-weight: 700;
         margin-bottom: 40px;
+        line-height: 58px;
     }
 
     .meet {
         background: rgba(255, 255, 255, 0.05);
-        border-radius: 16px;
+        border-radius: 40px;
         padding: 40px;
         display: flex;
+        justify-content: flex-start;
         align-items: center;
         gap: 24px;
         text-align: left;
@@ -473,7 +470,7 @@
         height: 100%;
         max-width: 200px;
         max-height: 200px;
-        margin-right: 16px;
+        margin-right: 24px;
     }
 
     .host-details {
@@ -482,21 +479,21 @@
     }
 
     .host-details h3 {
-        font-size: 1.6rem;
-        font-weight: 600;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.3rem;
         margin-bottom: 12px;
     }
 
     .host-details p {
-        font-size: 0.95rem;
-        line-height: 1.6rem;
-        opacity: 70%;
+        line-height: 1.5rem;
+        opacity: 60%;
         margin-bottom: 16px;
     }
 
     .social {
         display: flex;
-        gap: 14px;
+        gap: 20px;
     }
 
     .social img {
@@ -521,6 +518,7 @@
 
 
     .footer-container {
+        width: 100%;
         max-width: 1200px;
         margin: auto;
         padding: 80px 20px 40px;
@@ -544,7 +542,7 @@
         grid-template-columns: 22px auto;
         align-items: center;
         column-gap: 8px;
-        opacity: 0.8;
+        opacity: 60%;
         transition: 0.3s ease;
     }
 
@@ -560,8 +558,8 @@
     }
 
     .listen p {
-        font-size: 0.9rem;
-        white-space: nowrap;
+        line-height: 1.2rem;
+        font-weight: 500;
         cursor: pointer;
     }
 
@@ -572,9 +570,9 @@
     }
 
 
-    .footer-container p {
-        font-size: 0.8rem;
-        opacity: 0.7;
+    .copy {
+        opacity: 60%;
+        line-height: 1.5rem;
     }
 
     /* Hamburger Icon */
