@@ -108,6 +108,7 @@
 
         list-style: none;
         display: flex;
+        /* flex-direction: column; */
         gap: 32px;
     }
 
@@ -624,6 +625,9 @@
             gap: 20px;
             padding: 30px 0;
             display: none;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
         }
 
         #menu-toggle:checked~.nav-links {
