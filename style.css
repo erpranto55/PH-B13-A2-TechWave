@@ -236,7 +236,7 @@
 
 
     .about-hr {
-        border: 1px solid var(--#FFFFFF, rgba(255, 255, 255, 1));
+        border: 1px solid #FFFFFF;
         opacity: 0.1;
         margin: 80px 0;
     }
@@ -600,7 +600,6 @@
         .navbar {
             justify-content: space-between;
             padding: 0 20px;
-            position: relative;
         }
 
         .logo {
@@ -635,7 +634,6 @@
         /* Hero Part */
         .hero {
             height: auto;
-            min-height: 760px;
             padding-top: 80px;
             background-size: 100% auto;
             background-position: center 70px;
@@ -670,14 +668,23 @@
         }
 
         .btn-grp {
-            flex-direction: column;
             width: 100%;
             align-items: center;
         }
 
         .btn {
             width: 100%;
-            max-width: 260px;
+            max-width: 200px;
+        }
+
+        .spot {
+            width: 100%;
+            max-width: 160px;
+        }
+
+        .second-btn {
+            width: 100%;
+            max-width: 120px;
         }
 
         /* About Section */
@@ -695,8 +702,6 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-
-            gap: 40px;
             padding: 40px 20px;
             height: auto;
         }
@@ -711,10 +716,16 @@
             text-align: center;
         }
 
+        .about-hr {
+            width: 80%;
+            margin:40px 0;
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
+
         .about-stats {
             width: 100%;
             max-width: 400px;
-            margin-top: 40px;
+            margin-top: 0px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             row-gap: 40px;
@@ -730,7 +741,6 @@
         .why-box {
             max-width: 460px;
             width: 100%;
-            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -751,12 +761,12 @@
         .why-grid .card {
             width: 100%;
             padding: 24px;
-            border-radius: 16px;
             background: rgba(255, 255, 255, 0.05);
         }
 
         .why-icon {
-            width: 35px;
+            height: 40px;
+            width: 40px;
             margin-bottom: 12px;
         }
 
@@ -774,7 +784,7 @@
 
         /* Featured Episodes Section */
         .featured {
-            padding: 60px;
+            padding: 40px;
         }
 
         .episodes {
@@ -796,7 +806,6 @@
         .cards .card {
             width: 100%;
             height: auto;
-            border-radius: 16px;
             overflow: hidden;
         }
 
@@ -902,7 +911,6 @@
         }
 
         .listen p {
-            font-size: 0.9rem;
             white-space: nowrap;
         }
 
